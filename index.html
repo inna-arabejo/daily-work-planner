@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/jass.css" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <title>Simplify - Your Day</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Work Day Scheduler</title>
   </head>
   <body>
 
@@ -24,105 +36,69 @@
         <table class="table">
           <div class="container-fluid">
 
-            <form>
-              <div class = "row">
-                <div class="col-2-hour" id ="0900"> 9AM </div>
-                <div class="col-8">
-                  <input type="text" id="event-input" placeholder="Type in event and click save."/>
-                </div>
-                <div class="col-2">
-                  <button class="save-btn">Save</button>
-                </div>
-              </div>
-            </form>
-            <form>
-              <div class = "row" >
-                <div class="col-2-hour" id ="1000"> 10AM </div>
-                <div class="col-8">
-                  <input type="text" id="event-input" placeholder="Type in event and click save."/>
-                </div>
-                <div class="col-2">
-                  <button class="save-btn">Save</button>
-                </div>
-              </div>
-            </form>
-            <form>
-              <div class = "row" >
-                <div class="col-2-hour" id ="1100"> 11AM </div>
-                <div class="col-8">
-                  <input type="text" class="event-input" placeholder="Type in event and click save."/>
-                </div>
-                <div class="col-2">
-                  <button class="save-btn">Save</button>
-                </div>
-              </div>
-            </form>
-            <form>  
-              <div class = "row" >
-                <div class="col-2-hour" id ="1200"> 12PM </div>
-                <div class="col-8">
-                  <input type="text" class="event-input" placeholder="Type in event and click save."/>
-                </div>
-                <div class="col-2">
-                  <button class="save-btn">Save</button>
-                </div>
-              </div>
-            </form>
-            <form>
-              <div class = "row" >
-                <div class="col-2-hour" id ="1300"> 1PM </div>
-                <div class="col-8">
-                  <input type="text" class="event-input" placeholder="Type in event and click save."/>
-                </div>
-                <div class="col-2">
-                  <button class="save-btn">Save</button>
-                </div>
-              </div>
-            </form>
-            <form>
-              <div class = "row" >
-                <div class="col-2-hour" id ="1400"> 2PM </div>
-                <div class="col-8">
-                  <input type="text" class="event-input" placeholder="Type in event and click save."/>
-                </div>
-                <div class="col-2">
-                  <button class="save-btn">Save</button>
-                </div>
-              </div>
-            </form>
-            <form>
-              <div class = "row" >
-                <div class="col-2-hour" id ="1500"> 3PM </div>
-                <div class="col-8">
-                  <input type="text" class="event-input" placeholder="Type in event and click save."/>
-                </div>
-                <div class="col-2">
-                  <button class="save-btn">Save</button>
-                </div>
-              </div>
-            </form>
-            <form>
-              <div class = "row" >
-                <div class="col-2-hour" id ="1600"> 4PM </div>
-                <div class="col-8">
-                  <input type="text" class="event-input" placeholder="Type in event and click save."/>
-                </div>
-                <div class="col-2">
-                  <button class="save-btn">Save</button>
-                </div>
-              </div>
-            </form>
-            <form>
-              <div class = "row" >
-                <div class="col-2-hour" id ="1700"> 5PM </div>
-                <div class="col-8">
-                  <input type="text" class="event-input" placeholder="Type in event and click save."/>
-                </div>
-                <div class="col-2">
-                  <button class="save-btn">Save</button>
-                </div>
-              </div>
-            </form>
+            
+            <div  id="hour-9" class = "row timeblock">
+              <div class="col-1 hour"> 9AM </div>
+              <textarea class="col-10 text-event" type="text" placeholder="Type in event and click save."></textarea>
+              <button class="col-1 save-btn" type="button"><i class="fas fa-save"></i></button>
+            </div>
+          
+          
+            <div class = "row timeblock" id="hour-10">
+              <div class="col-1 hour"> 10AM </div>
+              <textarea class="col-10 text-event" type="text" placeholder="Type in event and click save."></textarea>
+              <button class="col-1 save-btn" type="button"><i class="fas fa-save"></i></button>
+            </div>
+          
+          
+            <div class = "row timeblock" id="hour-11">
+              <div class="col-1 hour"> 11AM </div>
+              <textarea class="col-10 text-event" type="text" placeholder="Type in event and click save."></textarea>
+              <button class="col-1 save-btn" type="button"><i class="fas fa-save"></i></button>
+            </div>
+          
+            
+            <div class = "row timeblock" id="hour-12">
+              <div class="col-1 hour"> 12PM </div>
+              <textarea class="col-10 text-event" type="text" placeholder="Type in event and click save."></textarea>
+              <button class="col-1 save-btn" type="button"><i class="fas fa-save"></i></button>
+            </div>
+          
+          
+            <div class = "row timeblock" id="hour-1">
+              <div class="col-1 hour"> 1PM </div>
+              <textarea class="col-10 text-event" type="text" placeholder="Type in event and click save."></textarea>
+              <button class="col-1 save-btn" type="button"><i class="fas fa-save"></i></button>
+            </div>
+          
+          
+            <div class = "row timeblock" id="hour-2">
+              <div class="col-1 hour"> 2PM </div>
+              <textarea class="col-10 text-event" type="text" placeholder="Type in event and click save."></textarea>
+              <button class="col-1 save-btn" type="button"><i class="fas fa-save"></i></button>
+            </div>
+          
+          
+            <div class = "row timeblock" id="hour-3">
+              <div class="col-1 hour"> 3PM </div>
+              <textarea class="col-10 text-event" type="text" placeholder="Type in event and click save."></textarea>
+              <button class="col-1 save-btn" type="button"><i class="fas fa-save"></i></button>
+            </div>
+          
+          
+            <div class = "row timeblock" id="hour-4">
+              <div class="col-1 hour"> 4PM </div>
+              <textarea class="col-10 text-event" type="text" placeholder="Type in event and click save."></textarea>
+              <button class="col-1 save-btn" type="button"><i class="fas fa-save"></i></button>
+            </div>
+          
+          
+            <div class = "row timeblock" id="hour-5">
+              <div class="col-1 hour"> 5PM </div>
+              <textarea class="col-10 text-event" type="text" placeholder="Type in event and click save."></textarea>
+              <button class="col-1 save-btn" type="button"><i class="fas fa-save"></i></button>
+            </div>
+            
 
           </div>
         </table>
