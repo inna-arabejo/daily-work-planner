@@ -33,6 +33,20 @@ function getTextEvent(){
   return getText
 }
 
+$('.container-fluid').children().each((blockHour, event) =>{
+  var currentHour = moment().format('H');
+  if ((blockHour + 9) < currentHour) {
+    $(event).addClass("past");
+  } else if ((blockHour + 9) > currentHour) {
+    $(event).addClass("future");
+  } else {
+    $(event).addClass("present");
+  }
+    
+})
+
+$('.container-fluid').children().find('.text-event').each((blockHour, event) => $(event).val(workHr[blockHour]))
+
 
 
 
