@@ -18,6 +18,20 @@ $('.container-fluid').on('click', '.save-btn', function () {
   pushTextEvent()
 })
 
+function pushTextEvent(){
+  textArea = JSON.stringify(workHr);
+  localStorage.setItem("description", textArea);
+}
+
+function getTextEvent(){
+  var getText = localStorage.getItem("description");
+  if (getText === null){
+    getText = Array(9).fill('');
+  } else {
+    getText = JSON.parse(getText)
+  }
+  return getText
+}
 
 
 
