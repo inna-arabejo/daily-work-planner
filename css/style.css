@@ -12,7 +12,7 @@ main {
   margin-left: 10%;
   margin-right: 10%;
 }
-/* Header */
+/* Header for date and time */
 header {
   text-align: center;
   font-size: 20px;
@@ -31,6 +31,7 @@ header div p#current {
   font-size: 20px;
 }
 
+/* Main */
 .container-fluid {
   margin-bottom: 30px;
 }
@@ -39,17 +40,16 @@ header div p#current {
 .row {
   height: 75px;
 }
-
+/* Hour */
 .col-1.hour {
   border: 2px grey dotted;
   width: 10%;
 }
-
+/* Textarea where event description will be typed */
 textarea {
   background: transparent;
 }
-
-
+/* Save button */
 .col-1.save-btn {
   border: 1px black solid;
   border-top-right-radius: 15px;
@@ -59,7 +59,7 @@ textarea {
 }
 
 
-
+/* Color timeblock indicator */
 .past {
   background-color: #b3b3b3;
   border-top-right-radius: 15px;

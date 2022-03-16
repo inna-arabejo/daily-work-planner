@@ -7,13 +7,13 @@ Create a planner that allows you to save events for each hour of the day on a ca
 To schedule events on a daily planner, the following requirements are met when:
 - The current day is displayed at the top of the calendar.
 - There are timeblocks for each hour displayed.
-- Each timeblock is color coded to indicate past, present, and future time.
+- Each timeblock is color coded to indicate past, present, and future time for that day.
 - An event can be entered when the timeblock is clicked.
-- The event entered is then saved in local storage.
+- The event entered is then saved in local storage after clicking the save button.
 - The data for the event entered is still displayed when there is a page refresh.
 
 ## Screenshot
-![Daily work planner screenshot](./)
+![Daily work planner screenshot](./css/images/daily-planner-screenshot.jpg)
 
 ## Link to the Final Page
 [Link to the final work planner]https://inna-arabejo.github.io/daily-work-planner/

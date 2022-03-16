@@ -7,7 +7,7 @@ var workHr = getTextEvent();
 // Add momentjs time in header
 $("#current").text(moment().format('MMMM Do YYYY, h:mm a'));
 
-
+// Activates daily planner 
 $('.container-fluid').on('click', '.save-btn', function () {
   getTextEvent();
   btnIdx = $(this).index('.save-btn')
@@ -18,11 +18,13 @@ $('.container-fluid').on('click', '.save-btn', function () {
   pushTextEvent()
 })
 
+// Sets event to local storage
 function pushTextEvent(){
   textArea = JSON.stringify(workHr);
   localStorage.setItem("description", textArea);
 }
 
+// Retrieves event from local storage
 function getTextEvent(){
   var getText = localStorage.getItem("description");
   if (getText === null){
@@ -33,6 +35,7 @@ function getTextEvent(){
   return getText
 }
 
+// Defines color of each timeblock to indicate past, current, and future time
 $('.container-fluid').children().each((blockHour, event) =>{
   var currentHour = moment().format('H');
   if ((blockHour + 9) < currentHour) {
