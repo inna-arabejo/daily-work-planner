@@ -12,11 +12,12 @@ To schedule events on a daily planner, the following requirements are met when:
 - The event entered is then saved in local storage after clicking the save button.
 - The data for the event entered is still displayed when there is a page refresh.
 
+## Link to the Final Page
+[Link to the final work planner](https://inna-arabejo.github.io/daily-work-planner/)
+
 ## Screenshot
 ![Daily work planner screenshot](./css/images/daily-planner-screenshot.jpg)
 
-## Link to the Final Page
-[Link to the final work planner]https://inna-arabejo.github.io/daily-work-planner/
 
 ## Sources
 - https://momentjs.com/
