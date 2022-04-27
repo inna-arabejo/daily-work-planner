@@ -12,6 +12,15 @@ To schedule events on a daily planner, the following requirements are met when:
 - The event entered is then saved in local storage after clicking the save button.
 - The data for the event entered is still displayed when there is a page refresh.
 
+## Usage
+This program can be run through a browser using the above link to the the deployed application. Alternatively, to run this application locally you will need to:
+
+1. Clone this repository to receive all of the files.
+2. Make sure you are in the directory of the application. It should be in a folder named daily-work-planner.
+3. Right-click on the index.html file
+4. Click on `Open in Default Browser`
+5. The browser should render the web page
+
 ## Screenshot
 ![Daily work planner screenshot](./css/images/daily-planner-screenshot.jpg)
 
