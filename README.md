@@ -13,7 +13,7 @@ To schedule events on a daily planner, the following requirements are met when:
 - The data for the event entered is still displayed when there is a page refresh.
 
 ## Usage
-This program can be run through a browser using the above link to the the deployed application. Alternatively, to run this application locally you will need to:
+This program can be run through a browser to the the deployed application. Alternatively, to run this application locally you will need to:
 
 1. Clone this repository to receive all of the files.
 2. Make sure you are in the directory of the application. It should be in a folder named daily-work-planner.
