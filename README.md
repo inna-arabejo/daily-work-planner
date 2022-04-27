@@ -1,5 +1,7 @@
 # Daily Work Planner
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 ## Description
 Create a planner that allows you to save events for each hour of the day on a calendar. This planner enables an employee with a busy schedule to add important events so that they can manage their time effectively. You will be utilizing the Moment.js library to work with date and time. 
 
